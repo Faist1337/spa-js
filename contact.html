@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <h1>Skontaktuj się z nami</h1>
+  <form id="contactForm">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <div class="captcha-container">
+      <label for="captchaInput">Przepisz kod: <span id="captchaCode"></span></label>
+      <input type="text" id="captchaInput" required />
+    </div>
+
+    <button type="submit">Wyślij</button>
+    <p id="status" class="hidden"></p>
+  </form>
+
+  <script src="js/contact.js" defer></script>
+</body>
+</html>
